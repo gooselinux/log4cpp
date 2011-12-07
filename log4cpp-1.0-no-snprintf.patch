@@ -1,0 +1,24 @@
+diff -up log4cpp-1.0/src/Makefile.am.BAD log4cpp-1.0/src/Makefile.am
+--- log4cpp-1.0/src/Makefile.am.BAD	2009-02-02 14:08:21.000000000 -0500
++++ log4cpp-1.0/src/Makefile.am	2009-02-02 14:08:31.000000000 -0500
+@@ -2,7 +2,7 @@ lib_LTLIBRARIES = liblog4cpp.la
+ 
+ INCLUDES = -I$(top_srcdir)/include
+ 
+-noinst_HEADERS = snprintf.c Localtime.hh
++noinst_HEADERS = Localtime.hh
+ 
+ liblog4cpp_la_SOURCES = \
+ 	Appender.cpp \
+diff -up log4cpp-1.0/src/Makefile.in.BAD log4cpp-1.0/src/Makefile.in
+--- log4cpp-1.0/src/Makefile.in.BAD	2009-02-02 14:08:12.000000000 -0500
++++ log4cpp-1.0/src/Makefile.in	2009-02-02 14:08:18.000000000 -0500
+@@ -245,7 +245,7 @@ top_builddir = @top_builddir@
+ top_srcdir = @top_srcdir@
+ lib_LTLIBRARIES = liblog4cpp.la
+ INCLUDES = -I$(top_srcdir)/include
+-noinst_HEADERS = snprintf.c Localtime.hh
++noinst_HEADERS = Localtime.hh
+ liblog4cpp_la_SOURCES = \
+ 	Appender.cpp \
+ 	AppenderSkeleton.cpp \

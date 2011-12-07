@@ -1,0 +1,29 @@
+--- a/configure.in	2007-08-29 12:32:16.000000000 +0300
++++ b/configure.in	2010-04-25 13:42:05.000000000 +0300
+@@ -140,6 +140,7 @@
+ config/Makefile
+ doc/Makefile
+ doc/Doxyfile
++doc/Doxyfooter
+ doc/html/Makefile
+ src/Makefile
+ include/Makefile
+--- a/doc/Doxyfooter.in	2010-04-26 18:26:25.000000000 +0300
++++ b/doc/Doxyfooter.in	2010-04-26 18:27:43.000000000 +0300
+@@ -0,0 +1,5 @@
++<hr size="1"/><address style="text-align: right;"><small>Generated for @PACKAGE_NAME@-@PACKAGE_VERSION@ by&nbsp;
++<a href="http://www.doxygen.org/index.html">
++<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
++</body>
++</html>
+--- a/doc/Doxyfile.in	2007-09-03 12:53:14.000000000 +0300
++++ b/doc/Doxyfile.in	2010-04-25 13:41:38.000000000 +0300
+@@ -14,7 +14,7 @@
+ OUTPUT_DIRECTORY     = .
+ HTML_OUTPUT          = html/api
+ HTML_HEADER          =
+-HTML_FOOTER          = 
++HTML_FOOTER          = Doxyfooter
+ LATEX_OUTPUT         = latex
+ MAN_OUTPUT           = man
+ 
